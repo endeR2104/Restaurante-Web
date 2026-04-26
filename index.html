@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Restaurante Sabor Elegante</title>
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">Sabor Elegante</div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#especialidades">Especialidades</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container hero-content">
+            <div>
+                <h1>Experiencia gastronómica excepcional</h1>
+                <p>Disfruta de los sabores más exquisitos en un ambiente elegante y acogedor</p>
+                <a href="#reservas" class="btn">Reserva ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección especialidades -->
+    <section class="specialties" id="especialidades">
+        <div class="container">
+            <h2 class="section-title">Nuestras Especialidades</h2>
+            <div class="dishes">
+                <div class="dish">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Plato gourmet">
+                    <div class="dish-info">
+                        <h3>Pasta Trufada</h3>
+                        <p>Exquisita pasta con salsa de trufa negra y champiñones silvestres</p>
+                    </div>
+                </div>
+                <div class="dish">
+                    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Plato gourmet">
+                    <div class="dish-info">
+                        <h3>Risotto de Mariscos</h3>
+                        <p>Arroz cremoso con una selección de los mejores mariscos</p>
+                    </div>
+                </div>
+                <div class="dish">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Plato gourmet">
+                    <div class="dish-info">
+                        <h3>Corte Premium</h3>
+                        <p>Corte de res madurado con hierbas aromáticas y vegetales asados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección menú -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Nuestro Menú</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="entradas">Entradas</button>
+                <button class="category-btn" data-category="platos-fuertes">Platos Fuertes</button>
+                <button class="category-btn" data-category="postres">Postres</button>
+                <button class="category-btn" data-category="bebidas">Bebidas</button>
+            </div>
+            <div class="menu-items">
+                <div class="menu-item" data-category="entradas">
+                    <div class="menu-item-header">
+                        <span class="menu-item-title">Bruschetta Clásica</span>
+                        <span class="menu-item-price">$8.99</span>
+                    </div>
+                    <p class="menu-item-desc">Pan tostado con tomate fresco, albahaca y aceite de oliva extra virgen</p>
+                </div>
+                <div class="menu-item" data-category="entradas">
+                    <div class="menu-item-header">
+                        <span class="menu-item-title">Ceviche de Corvina</span>
+                        <span class="menu-item-price">$12.99</span>
+                    </div>
+                    <p class="menu-item-desc">Pescado fresco marinado en limón con cebolla morada y cilantro</p>
+                </div>
+                <div class="menu-item" data-category="platos-fuertes">
+                    <div class="menu-item-header">
+                        <span class="menu-item-title">Lomo de Res</span>
+                        <span class="menu-item-price">$24.99</span>
+                    </div>
+                    <p class="menu-item-desc">Corte premium con salsa de vino tinto y guarnición de vegetales</p>
+                </div>
+                <div class="menu-item" data-category="platos-fuertes">
+                    <div class="menu-item-header">
+                        <span class="menu-item-title">Salmón a la Parrilla</span>
+                        <span class="menu-item-price">$22.99</span>
+                    </div>
+                    <p class="menu-item-desc">Salmón salvaje con costra de hierbas y puré de batata</p>
+                </div>
+                <div class="menu-item" data-category="postres">
+                    <div class="menu-item-header">
+                        <span class="menu-item-title">Volcán de Chocolate</span>
+                        <span class="menu-item-price">$9.99</span>
+                    </div>
+                    <p class="menu-item-desc">Pastel de chocolate con centro líquido y helado de vainilla</p>
+                </div>
+                <div class="menu-item" data-category="postres">
+                    <div class="menu-item-header">
+                        <span class="menu-item-title">Cheesecake de Frutos Rojos</span>
+                        <span class="menu-item-price">$8.99</span>
+                    </div>
+                    <p class="menu-item-desc">Tarta de queso cremosa con coulis de frutos del bosque</p>
+                </div>
+                <div class="menu-item" data-category="bebidas">
+                    <div class="menu-item-header">
+                        <span class="menu-item-title">Vino de la Casa</span>
+                        <span class="menu-item-price">$6.99</span>
+                    </div>
+                    <p class="menu-item-desc">Copa de nuestro vino tinto o blanco seleccionado</p>
+                </div>
+                <div class="menu-item" data-category="bebidas">
+                    <div class="menu-item-header">
+                        <span class="menu-item-title">Cóctel Signature</span>
+                        <span class="menu-item-price">$10.99</span>
+                    </div>
+                    <p class="menu-item-desc">Nuestra exclusiva mezcla de ginebra, licor de flor de saúco y cítricos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección sobre nosotros -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Interior del restaurante">
+            </div>
+            <div class="about-content">
+                <h2>Nuestra Historia</h2>
+                <p>Desde 2005, Sabor Elegante ha sido sinónimo de excelencia culinaria en la ciudad. Nuestro chef ejecutivo, Antonio Rivera, combina técnicas tradicionales con innovación para crear platos que deleitan todos los sentidos.</p>
+                <p>Utilizamos ingredientes frescos y de temporada, sourced de productores locales comprometidos con la calidad y sostenibilidad. Nuestro compromiso es ofrecer una experiencia gastronómica memorable en un ambiente sofisticado pero acogedor.</p>
+                <a href="#" class="btn">Conoce más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Sabor Elegante</h3>
+                    <p>Dirección: Av. Gourmet 123, Ciudad</p>
+                    <p>Teléfono: (123) 456-7890</p>
+                    <p>Email: info@saborelegante.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Horario</h3>
+                    <p>Lunes a Jueves: 11:00 - 22:00</p>
+                    <p>Viernes y Sábado: 11:00 - 00:00</p>
+                    <p>Domingo: 12:00 - 20:00</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#reservas">Reservaciones</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">IG</a>
+                        <a href="#">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Sabor Elegante. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
